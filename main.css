@@ -114,6 +114,20 @@ form.form_rest {
     gap: 10px 10px;
 }
 
+#section3 {
+    font-family: 'Dosis', sans-serif;
+    border-style: groove;
+    border-color: #b2abf2;
+    border-width: 0.3em;
+    border-radius: 5px;
+    
+    padding: 10px 20px 10px 20px;
+}
+
+fieldset {
+    display: inline-block;
+}
+
 @media screen and (max-width: 600px) {
     video {
         width: fit-content;

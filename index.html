@@ -11,10 +11,12 @@
             <h1>Welcome to My Journal Site!</h1>
             <p>Created by Calvin Qin</p>
             <nav>
-                <a href="#e1">Entry 1</a> |
-                <a href="#e2">Entry 2</a> |
-                <a href="#e3">Entry 3</a> |
-                <a href="#e4">Footer</a>
+                <ul>
+                    <a href="#e1">Entry 1</a>
+                    <a href="#e2">Entry 2</a>
+                    <a href="#e3">Entry 3</a>
+                    <a href="#e4">Footer</a>
+                </ul>
             </nav>
         </header>
         <main>
@@ -40,12 +42,12 @@
                 </video>
             </section>
             <hr>
-            <section>
+            <section id="section2">
                 <h2 id="e2">April 7, 2021</h2>
                 Today, 
-                Aside from classes, I got a bag of chips today. Here is a picture: <br>
-                <img src="chips.png" alt="Meh Chips" width="600" height="800"> <br>
-                10/10 they have <strong>65%</strong> less fat too.
+                Aside from classes, I got a bag of chips today. Here is an interactive picture: <br>
+                <img src="chips.png" alt="Meh Chips" class="center"> <br>
+                10/10 they have <strong>65%</strong> <span>less</span> fat too.
                 <br>
                 I have also been working on my website, which will hopefully go soon live at this  <a href="https://calvq.github.io/" target="_blank">link</a> .
             </section>
@@ -73,38 +75,36 @@
             <fieldset>
                 <h3>General Form</h3>
                 <form>
-                    <input type="radio">
-                    <label>Having a good time?</label><br>
-                    <input type="checkbox">
-                    <label>Want a good time?</label><br>
-                    <label>Name:</label>
-                    <input type="text">
-                    <label>Date:</label>
-                    <input type="date"> 
+                    <input type="radio"> <label>Having a good time?</label><br>
+                    <input type="checkbox"> <label>Want a good time?</label><br>
+                    <label>Name:</label> <input type="text">
+                    <label>Date:</label> <input type="date"> 
                     <br>
-                    <textarea id="essay" name="essay" rows="4" cols="100">
-                    Please write an essay on why bananas are better than strawberries.
-                    </textarea>
-                    <br>
-                    <label for="Shapes">Shapes</label>
-                    <input list="Shapess" name="Shapes" id="Shapes">
-                    <datalist id="Shapess">
-                        <option value="Square">
-                        <option value="Triangle">
-                        <option value="Circle">
-                    </datalist>
+                    <div class="form_rest">
+                        <textarea id="essay" name="essay" rows="4" cols="100">
+                        Please write an essay on why bananas are better than strawberries.
+                        </textarea>
+                        <br>
+                        <label for="Shapes">Shapes</label>
+                        <input list="Shapess" name="Shapes" id="Shapes">
+                        <datalist id="Shapess">
+                            <option value="Square">
+                            <option value="Triangle">
+                            <option value="Circle">
+                        </datalist>
 
-                    <label for="stonk">Choose a stock to buy:</label>
+                        <label for="stonk">Choose a stock to buy:</label>
 
-                    <select name="cars" id="stonk">
-                        <option value="gme">$GME</option>
-                        <option value="tsla">$TSLA</option>
-                        <option value="aapl">$AAPL</option>
-                        <option value="pltr">$PLTR</option>
-                    </select>
-                    <br>
+                        <select name="cars" id="stonk">
+                            <option value="gme">$GME</option>
+                            <option value="tsla">$TSLA</option>
+                            <option value="aapl">$AAPL</option>
+                            <option value="pltr">$PLTR</option>
+                        </select>
+                        <br>
 
-                    <button type="button">Click Me!</button>
+                        <button type="button">Click Me!</button>
+                    </div>
                 </form>
             </fieldset>
             <details>

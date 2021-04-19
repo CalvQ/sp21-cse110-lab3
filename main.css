@@ -1,0 +1,43 @@
+* {
+    color: white;
+    background-color: rgba(37, 37, 37, 1);
+}
+
+header,footer {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-left: -0.5vw;
+    margin-right: -0.5vw;
+    position: static;
+
+    font-family: 'Lora', serif;
+}
+
+header > h1 {
+    display: inline-block;
+    margin-bottom: -20px;
+    margin-top: -5px;
+}
+
+header nav a{
+    margin: 0px 50px 0px 50px;
+    text-decoration: overline underline;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
+#section1 {
+    font-family: 'Dosis', sans-serif;
+    border-style: groove;
+    border-color: #f3746e;
+    border-width: 0.3em;
+    border-radius: 5px;
+    
+    padding: 10px 20px 10px 20px;
+}
+

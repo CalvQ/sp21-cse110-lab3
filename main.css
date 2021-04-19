@@ -3,17 +3,19 @@
     background-color: rgba(37, 37, 37, 1);
 }
 
+/* Special header and footer spacings */
 header,footer {
     display: block;
     margin: auto;
     text-align: center;
     margin-left: -0.5vw;
-    margin-right: -0.5vw;
-    position: static;
+    margin-right: 3vw;
+    position: sticky;
 
     font-family: 'Lora', serif;
 }
 
+/* Styling header here */
 header > h1 {
     display: inline-block;
     margin-bottom: -20px;
@@ -21,14 +23,28 @@ header > h1 {
 }
 
 header nav a{
-    margin: 0px 50px 0px 50px;
+    margin: 0px 10px 0px 10px;
     text-decoration: overline underline;
 }
 
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-basis: auto;
+    flex-grow: 2;
+}
+
+header nav a:active {
+    background-color: #e4b6c9;
+}
+
+/* Center media in page */
 .center {
     margin-left: auto;
     margin-right: auto;
-    display: block
+    display: block;
+    position: static;
 }
 
 #section1 {
@@ -41,3 +57,65 @@ header nav a{
     padding: 10px 20px 10px 20px;
 }
 
+#section2 {
+    font-family: 'Dosis', sans-serif;
+    border-style: groove;
+    border-color: hsl(200, 44%, 71%);
+    border-width: 0.3em;
+    border-radius: 5px;
+    
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+img.center {
+    width: 30%;
+    height: 40%;
+    max-width: 600px;
+    max-height: 800px;
+    min-width: 240px;
+    min-height: 320px;
+}
+
+img {
+    border-style:solid;
+    border-width: 10px;
+    border-radius: 50px;
+    border-color: rgba(37, 37, 37, 1);
+}
+
+img:hover {
+    border-color: #e4b6c9;
+}
+
+b ~ span {
+    font-style: italic;
+}
+
+strong + span {
+    text-decoration: underline;
+}
+
+a[target="_blank"] {
+    color: aqua;
+    font-style: oblique;
+}
+
+form {
+    text-align: left;
+}
+
+form.form_rest {
+    display: inline-grid;
+    grid-template-columns: auto;
+    place-self: center;
+    gap: 10px 10px;
+}
+
+@media screen and (max-width: 600px) {
+    video {
+        width: fit-content;
+    }
+}

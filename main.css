@@ -126,6 +126,9 @@ form.form_rest {
 
 fieldset {
     display: inline-block;
+    border: #8bc878;
+    border-width: 2px;
+    border-style: dashed;
 }
 
 @media screen and (max-width: 600px) {
